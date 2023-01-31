@@ -1,6 +1,6 @@
 import About from "../components/About";
 import Skills from "../components/Skills";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaAws, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -23,6 +23,9 @@ const HomePage = () => {
             to="https://www.linkedin.com/in/tyler-dinn-1a2b3c4d/"
           >
             <FaLinkedin />
+          </Link>
+          <Link className="aws" to="https://www.credly.com/users/tylerdinn">
+            <FaAws />
           </Link>
         </div>
       </div>
