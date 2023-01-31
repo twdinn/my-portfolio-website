@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Project = ({ name, desc, proLink, image }) => {
   return (
     <section className="project">
@@ -10,9 +8,9 @@ const Project = ({ name, desc, proLink, image }) => {
         <p>{desc}</p>
       </div>
       <div className="project-link">
-        <Link to={proLink}>
+        <a href={proLink}>
           <img src={image} alt={name} />
-        </Link>
+        </a>
       </div>
     </section>
   );

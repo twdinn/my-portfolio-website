@@ -34,7 +34,7 @@ const ProjectsPage = () => {
       id: 5,
       name: "Rock Paper Scissors Game",
       desc: "Play Rock Paper Scissors against the computer",
-      proLink: "https://twdinn.github.io/react-rock-paper-scissors-game/",
+      proLink: "https://twdinn.github.io/rock-paper-scissors/",
       image: "./media/rock-paper-scissors.jpeg",
     },
   ];
