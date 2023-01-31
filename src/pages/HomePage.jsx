@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Skills from "../components/Skills";
 
 const HomePage = () => {
   return (
@@ -7,6 +8,7 @@ const HomePage = () => {
         <img className="profile-pic" src="/media/profile.jpg" alt="Profile" />
       </div>
       <About />
+      <Skills />
     </section>
   );
 };
