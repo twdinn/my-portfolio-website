@@ -24,6 +24,7 @@ nav {
 /* HomePage */
 .profile-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
@@ -34,6 +35,25 @@ nav {
   border-radius: 50%;
   background-color: #4e5d6c;
   height: 15rem;
+}
+
+.icons {
+  font-size: 2.5rem;
+}
+
+.github {
+  margin-right: 0.6rem;
+}
+.github:active,
+.github:visited,
+github:hover {
+  color: black;
+}
+
+.linkedin:active,
+.linkedin:visited,
+.linkedin:hover {
+  color: black;
 }
 
 /* About */
