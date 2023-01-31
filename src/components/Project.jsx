@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Project = ({ name, desc, proLink, image }) => {
   return (
@@ -10,9 +10,9 @@ const Project = ({ name, desc, proLink, image }) => {
         <p>{desc}</p>
       </div>
       <div className="project-link">
-        <a href={proLink}>
+        <Link to={proLink}>
           <img src={image} alt={name} />
-        </a>
+        </Link>
       </div>
     </section>
   );
