@@ -37,6 +37,13 @@ const ProjectsPage = () => {
       proLink: "https://twdinn.github.io/rock-paper-scissors/",
       image: "./media/rock-paper-scissors.jpeg",
     },
+    {
+      id: 6,
+      name: "Pokedex",
+      desc: "A List of Pokemon",
+      proLink: "https://twdinn.github.io/pokedex/",
+      image: "./media/pokedex.jpeg",
+    },
   ];
   return (
     <section>
