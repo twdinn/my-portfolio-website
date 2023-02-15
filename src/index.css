@@ -107,16 +107,17 @@ p {
 }
 
 /* Projects */
+
 .project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  padding-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
   border: 1rem solid #4e5d6c;
 }
 

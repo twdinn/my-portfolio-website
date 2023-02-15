@@ -55,7 +55,7 @@ const ProjectsPage = () => {
     },
   ];
   return (
-    <section>
+    <section className="projects-list">
       {projects.map((project) => (
         <Project
           key={project.id}
