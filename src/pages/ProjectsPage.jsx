@@ -53,6 +53,13 @@ const ProjectsPage = () => {
       proLink: "https://twdinn.github.io/pokedex/",
       image: "./media/pokedex.jpeg",
     },
+    {
+      id: { id },
+      name: "Newfoundland Page",
+      desc: "A Page with Info about Newfoundland",
+      proLink: "https://twdinn.github.io/newfoundland-page/",
+      image: "./media/nl-page.jpeg",
+    },
   ];
   return (
     <section className="projects-list">
