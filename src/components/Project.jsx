@@ -11,9 +11,7 @@ const Project = ({ name, desc, proLink, image }) => {
           <p>{desc}</p>
         </div>
         <div className="project-img">
-          {/* <a href={proLink}> */}
           <img src={image} alt={name} />
-          {/* </a> */}
         </div>
       </section>
     </Link>
