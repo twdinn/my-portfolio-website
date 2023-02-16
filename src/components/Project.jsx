@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Project = ({ name, desc, proLink, image }) => {
   return (
-    <Link to={proLink}>
-      <section className="project">
+    <section className="project">
+      <a href={proLink}>
         <div className="name">
           <h1>{name}</h1>
         </div>
@@ -13,8 +13,8 @@ const Project = ({ name, desc, proLink, image }) => {
         <div className="project-img">
           <img src={image} alt={name} />
         </div>
-      </section>
-    </Link>
+      </a>
+    </section>
   );
 };
 
