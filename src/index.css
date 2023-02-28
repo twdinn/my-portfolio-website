@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,17 +14,33 @@ nav {
   justify-content: flex-end;
   align-items: center;
   height: 3rem;
+  border-top: 1px double #ffcc00;
+  border-bottom: 1px double #ffcc00;
+  background-color: rgba(255, 204, 0, 0.2);
 }
 
 .nav-link {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #faf5e9;
-  text-shadow: -1px 1px 0 #ffcc00;
   margin-left: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
+.nav-link:hover {
+  border-bottom: 1px solid #faf5e9;
+}
+
+.aws {
+  font-size: 1.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.aws:hover {
+  font-size: 1.6rem;
+}
 /* HomePage */
 
 .intro {
@@ -37,53 +57,12 @@ nav {
 }
 
 .profile-pic {
-  border: 0.1rem solid black;
+  border: 2px double #ffcc00;
   border-radius: 50%;
-  background-color: #009b4d;
+  background-color: #28282b;
   height: 20rem;
-}
-
-.icons {
-  font-size: 2.5rem;
-}
-
-.github {
-  margin-right: 0.6rem;
-  color: #faf5e9;
-}
-
-.linkedin {
-  color: #faf5e9;
-}
-
-.aws {
-  font-size: 2.4rem;
-  margin-left: 0.6rem;
-  color: #faf5e9;
-}
-
-.github,
-.linkedin,
-aws {
-  transition: font-size 0.2s;
-}
-
-.linkedin:active,
-.github:active,
-.aws:active {
-  color: #faf5e9;
-}
-
-.github:visited,
-.linkedin:visited,
-.aws:visited {
-  color: #faf5e9;
-}
-
-.aws:hover,
-.linkedin:hover,
-.github:hover {
-  font-size: 3rem;
+  margin: 1rem;
+  padding: 0.2rem;
 }
 
 /* About */
@@ -93,14 +72,19 @@ p {
   font-size: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  text-align: center;
 }
 
 /* Skills*/
 .skills {
-  border: 1rem solid #009b4d;
-  background-color: #009b4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 3rem 1rem 1.5rem;
+  background-color: #28282b;
   border-radius: 4rem;
-  margin: 4rem 1.5rem 0 1.5rem;
+  border: 1px solid #1b1212;
 }
 
 .skills-list {
@@ -109,6 +93,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
+  margin: 3rem 2rem 3rem 2rem;
 }
 
 .skill-list-item {
@@ -128,7 +113,6 @@ p {
 }
 
 h2 {
-  text-align: center;
   color: #faf5e9;
   text-shadow: -1px 1px 0 #ffcc00;
   margin-bottom: 1rem;
@@ -166,7 +150,8 @@ h2 {
   padding-bottom: 0.5rem;
   border-radius: 1rem;
   border: 0.01rem solid #ffcc00;
-  background-color: #009b4d;
+  background-color: #28282b;
+  cursor: pointer;
 }
 .project:hover {
   animation-name: rotate-project;
@@ -190,6 +175,8 @@ h2 {
 .project-img img {
   height: auto;
   max-width: 100%;
+  border-radius: 1rem;
+  padding: 0 0.2rem 0 0.2rem;
 }
 
 a {
@@ -206,7 +193,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
   p,
   .name,
   h2 {
@@ -215,5 +202,47 @@ a {
   .skill-list-item img {
     height: 3rem;
     width: 3rem;
+  }
+  .projects-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project {
+    width: 100vw;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .intro {
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+
+  .profile-container {
+    margin-top: 1rem;
+  }
+
+  .profile-pic {
+    height: 15rem;
+  }
+
+  .skills {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .skills-list {
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
+    margin: 0.5rem 2rem 2rem 0.5rem;
+  }
+
+  .skill-list-item img {
+    height: 2rem;
+    width: 2rem;
   }
 }
