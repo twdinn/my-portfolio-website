@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
-const Project = ({ name, desc, proLink, image }) => {
+const Project = ({ name, desc, proLink, image, prodSkills }) => {
+  const id = uuidv4();
   return (
     <section className="project">
       <a href={proLink}>
@@ -12,6 +13,13 @@ const Project = ({ name, desc, proLink, image }) => {
         </div>
         <div className="project-img">
           <img src={image} alt={name} />
+        </div>
+        <div className="prod-skills">
+          {prodSkills.map((prodSkill) => (
+            <p key={id} className="prod-skill">
+              {prodSkill}
+            </p>
+          ))}
         </div>
       </a>
     </section>

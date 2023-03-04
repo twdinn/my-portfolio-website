@@ -178,6 +178,23 @@ h2 {
   border-radius: 1rem;
   padding: 0 0.2rem 0 0.2rem;
 }
+.prod-skills {
+  display: flex;
+  justify-content: center;
+}
+
+.prod-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+  background-color: rgba(255, 204, 0, 0.2);
+  border: 2px solid #ffcc00;
+  border-radius: 50%;
+  font-size: 1rem;
+}
 
 a {
   text-decoration: none;
