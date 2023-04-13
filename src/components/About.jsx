@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="About">
+    <section className="about">
       <p>
         My name is Tyler Dinn. I live in Goulds Newfoundland Canada and I
         studied Frontend Software Development at Keyin College. I have a strong

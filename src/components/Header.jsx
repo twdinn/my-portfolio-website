@@ -6,30 +6,43 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav">
-        <Link className="nav-link" to="/">
+        <Link className="home-nav nav-link" to="/">
           <FaHome />
-        </Link>
-        <Link className="nav-link" to="/projects">
-          <FaCode />
+          <p className="link-name">Home</p>
         </Link>
 
-        <Link className="github nav-link" to="https://github.com/twdinn">
-          <FaGithub />
+        <Link className="projects-nav nav-link" to="/projects">
+          <FaCode />
+          <p className="link-name">Projects</p>
         </Link>
+
         <Link
-          className="linkedin nav-link"
+          className="linkedin linkedin-nav nav-link"
           to="https://www.linkedin.com/in/tyler-dinn-1a2b3c4d/"
         >
           <FaLinkedin />
+          <p className="link-name">LinkedIn</p>
         </Link>
+
         <Link
-          className="aws nav-link"
+          className="github github-nav nav-link"
+          to="https://github.com/twdinn"
+        >
+          <FaGithub />
+          <p className="link-name">Github</p>
+        </Link>
+
+        <Link
+          className="aws aws-nav nav-link"
           to="https://www.credly.com/users/tylerdinn"
         >
           <FaAws />
+          <p className="link-name">AWS</p>
         </Link>
-        <a className="email nav-link" href="mailto:dinnwt@gmail.com">
+
+        <a className="email email-nav nav-link" href="mailto:dinnwt@gmail.com">
           <GrMail />
+          <p className="link-name">Email</p>
         </a>
       </nav>
     </header>

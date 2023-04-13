@@ -9,38 +9,68 @@ body {
 }
 
 /* Nav */
-nav {
+
+.nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 3rem;
-  border-top: 1px double #ffcc00;
-  border-bottom: 1px double #ffcc00;
+  height: 80px;
+  width: 100vw;
+  border-top: 1px solid #ffcc00;
+  border-bottom: 1px solid #ffcc00;
   background-color: rgba(255, 204, 0, 0.2);
 }
 
 .nav-link {
-  font-size: 1.2rem;
-  color: #faf5e9;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
   text-decoration: none;
+  color: #faf5e9;
+}
+
+.link-name {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.home-nav,
+.projects-nav,
+.github-nav,
+.linkedin-nav,
+.aws-nav,
+.email-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #faf5e9;
   cursor: pointer;
 }
 
-.nav-link:hover {
-  border-bottom: 1px solid #faf5e9;
+.home-nav:hover {
+  font-size: 1.8rem;
+}
+.projects-nav:hover {
+  font-size: 1.8rem;
+}
+.github-nav:hover {
+  font-size: 1.8rem;
+}
+.linkedin-nav:hover {
+  font-size: 1.8rem;
+}
+.aws-nav:hover {
+  font-size: 1.8rem;
 }
 
-.aws {
-  font-size: 1.5rem;
-  margin-top: 0.4rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
+.email-nav {
+  margin-right: 2rem;
 }
-.aws:hover {
-  font-size: 1.6rem;
+.email-nav:hover {
+  font-size: 1.8rem;
 }
+
 /* HomePage */
 
 .intro {
@@ -66,9 +96,8 @@ nav {
 }
 
 /* About */
-p {
+.about > p {
   color: #faf5e9;
-  text-shadow: -1px 1px 0 #ffcc00;
   font-size: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -100,6 +129,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #faf5e9;
+  margin-right: 1rem;
 }
 
 .skill-list-item:hover {
@@ -114,7 +145,6 @@ p {
 
 h2 {
   color: #faf5e9;
-  text-shadow: -1px 1px 0 #ffcc00;
   margin-bottom: 1rem;
 }
 
@@ -160,13 +190,13 @@ h2 {
 
 .name {
   color: #faf5e9;
-  text-shadow: -1px 1px 0 #ffcc00;
   font-size: 2rem;
   margin-bottom: 0.1rem;
   text-align: center;
 }
 
 .desc p {
+  color: #faf5e9;
   font-size: 1rem;
   margin-top: 0.1rem;
   text-align: center;
@@ -194,6 +224,8 @@ h2 {
   border: 2px solid #ffcc00;
   border-radius: 50%;
   font-size: 1rem;
+  color: #faf5e9;
+  margin-right: 1rem;
 }
 
 a {
@@ -211,11 +243,17 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-  p,
+  .home-nav,
+  .projects-nav,
+  .github-nav,
+  .linkedin-nav,
+  .aws-nav,
+  .email-nav,
   .name,
-  h2 {
+  .about > p {
     font-size: 1rem;
   }
+
   .skill-list-item img {
     height: 3rem;
     width: 3rem;
@@ -261,5 +299,18 @@ a {
   .skill-list-item img {
     height: 2rem;
     width: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home-nav,
+  .projects-nav,
+  .github-nav,
+  .linkedin-nav,
+  .aws-nav,
+  .email-nav {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
