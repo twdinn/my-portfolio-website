@@ -72,25 +72,29 @@ body {
 }
 
 /* HomePage */
-
-.intro {
+.homepage {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.profile-container {
+/* .intro {
+  display: flex;
+  align-items: center;
+} */
+
+/* .profile-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-}
+} */
 
 .profile-pic {
   border: 2px double #ffcc00;
   border-radius: 50%;
-  background-color: #28282b;
-  height: 20rem;
+  /* background-color: #28282b; */
+  height: 40px;
   margin: 1rem;
   padding: 0.2rem;
 }
@@ -102,6 +106,7 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: center;
+  border: 1px solid #ffcc00;
 }
 
 /* Skills*/

@@ -9,17 +9,17 @@ const HomePage = () => {
           <div>
             <img
               className="profile-pic"
-              src="./media/profile1.jpeg"
+              src="./media/profile.jpeg"
               alt="Profile"
             />
           </div>
         </div>
         <About />
       </div>
-      <div className="skills">
+      {/* <div className="skills">
         <h2>My Skills</h2>
         <Skills />
-      </div>
+      </div> */}
     </section>
   );
 };
