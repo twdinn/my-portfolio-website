@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import HamburgerMenu from "./components/HamburgerMenu";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";

@@ -16,9 +16,9 @@ body {
   align-items: center;
   height: 80px;
   width: 100vw;
-  border-top: 1px solid #ffcc00;
-  border-bottom: 1px solid #ffcc00;
-  background-color: rgba(255, 204, 0, 0.2);
+  border-top: 1px solid #5dade2;
+  border-bottom: 1px solid #5dade2;
+  background-color: rgba(93, 173, 226, 0.2);
 }
 
 .nav-link {
@@ -75,28 +75,17 @@ body {
 .homepage {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-/* .intro {
-  display: flex;
-  align-items: center;
-} */
-
-/* .profile-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-} */
-
 .profile-pic {
-  border: 2px double #ffcc00;
-  border-radius: 50%;
-  /* background-color: #28282b; */
-  height: 40px;
+  border: 2px double #5dade2;
+  border-radius: 8px;
+  width: 20rem;
+  height: 20rem;
   margin: 1rem;
   padding: 0.2rem;
+  object-fit: cover;
 }
 
 /* About */
@@ -106,7 +95,7 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: center;
-  border: 1px solid #ffcc00;
+  border: 1px solid #5dade2;
 }
 
 /* Skills*/
@@ -184,7 +173,7 @@ h2 {
   margin-right: 5rem;
   padding-bottom: 0.5rem;
   border-radius: 1rem;
-  border: 0.01rem solid #ffcc00;
+  border: 0.01rem solid #5dade2;
   background-color: #28282b;
   cursor: pointer;
 }
@@ -216,6 +205,7 @@ h2 {
 .prod-skills {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .prod-skill {
@@ -225,9 +215,9 @@ h2 {
   align-items: center;
   width: 5rem;
   height: 3rem;
-  background-color: rgba(255, 204, 0, 0.2);
-  border: 2px solid #ffcc00;
-  border-radius: 50%;
+  background-color: rgba(93, 173, 226, 0.2);
+  border: 2px solid #5dade2;
+  border-radius: 10px;
   font-size: 1rem;
   color: #faf5e9;
   margin-right: 1rem;

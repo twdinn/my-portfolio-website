@@ -6,6 +6,14 @@ const ProjectsPage = () => {
   const projects = [
     {
       id: { id },
+      name: "Fitness App",
+      desc: "A fitness app that gives workout and meal suggestions",
+      proLink: "https://twdinn.github.io/fitness-app/",
+      image: "./media/fitness-app.jpeg",
+      prodSkills: ["HTML", "CSS", "Javascript"],
+    },
+    {
+      id: { id },
       name: "Amazon Clone",
       desc: "A clone of Amazon",
       proLink: "https://twdinn.github.io/amazon/",
