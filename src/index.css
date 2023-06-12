@@ -10,15 +10,99 @@ body {
 
 /* Nav */
 
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+  width: 100%;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #faf5e9;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+.open .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.open .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-items {
+  position: relative;
+  top: 2rem;
+  /* right: 1rem; */
+  background-color: rgba(93, 173, 226, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: none;
+}
+
+.menu-items > .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100vw;
+  font-size: 1rem;
+  color: #faf5e9;
+  text-decoration: none;
+}
+
+.menu-items > .home-nav:hover {
+  font-size: 1.5rem;
+}
+
+.menu-items > .projects-nav:hover {
+  font-size: 1.5rem;
+}
+
+.menu-items > .github-nav:hover {
+  font-size: 1.5rem;
+}
+
+.menu-items > .linkedin-nav:hover {
+  font-size: 1.5rem;
+}
+
+.menu-items > .aws-nav:hover {
+  font-size: 1.5rem;
+}
+
+.menu-items > .email-nav:hover {
+  font-size: 1.5rem;
+}
+
+.open .menu-items {
+  display: block;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 80px;
   width: 100vw;
-  border-top: 1px solid #5dade2;
-  border-bottom: 1px solid #5dade2;
-  background-color: rgba(93, 173, 226, 0.2);
 }
 
 .nav-link {
@@ -75,15 +159,18 @@ body {
 .homepage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .profile-pic {
   border: 2px double #5dade2;
   border-radius: 8px;
   width: 20rem;
-  height: 20rem;
-  margin: 1rem;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   padding: 0.2rem;
   object-fit: cover;
 }
@@ -94,8 +181,34 @@ body {
   font-size: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  padding-left: 8px;
   text-align: center;
-  border: 1px solid #5dade2;
+  border-left: 8px solid #5dade2;
+}
+
+@media (min-width: 600px) {
+  .homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 16rem;
+    margin-left: 1rem;
+  }
+
+  /* About */
+  .about > p {
+    color: #faf5e9;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 8px;
+    text-align: center;
+    border-left: 8px solid #5dade2;
+  }
 }
 
 /* Skills*/
@@ -159,6 +272,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .project {
@@ -237,7 +351,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .home-nav,
   .projects-nav,
   .github-nav,
